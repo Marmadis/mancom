@@ -1,4 +1,4 @@
-package com.mancom.demo.controllers;
+package com.mancom.web.controllers;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;

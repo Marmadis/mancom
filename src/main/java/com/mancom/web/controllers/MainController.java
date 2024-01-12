@@ -1,4 +1,4 @@
-package com.mancom.demo.controllers;
+package com.mancom.web.controllers;
 
 
 import org.springframework.stereotype.Controller;
