@@ -11,12 +11,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class MangaController {
     @GetMapping("/manga")
     public String manga (@RequestParam(value = "manga", required = false)String manga ,
-                        @RequestParam(value = "chapter", required = false) int chapter,
-                        @RequestParam(value = "page" , required = false)int page ,Model model){
-        int result = page+chapter;
-        model.addAttribute("message",manga+" "+result+" ");
+                        @RequestParam(value = "chapter", required = false) String chapter,
+                        @RequestParam(value = "page" , required = false)String page ,Model model){
+        
 
-        System.out.println(manga+" "+chapter+" "+page+" ");
+                            model.addAttribute("message",manga+" "+chapter+" "+page+" ");
 
 
         return "manga";
